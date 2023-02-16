@@ -1,0 +1,2 @@
+Set-VMProcessor -VMName "Windows 11 dev environment" -ExposeVirtualizationExtensions $true
+Set-VMProcessor -VMName "Windows 11 dev environment" -HwThreadCountPerCore 2
