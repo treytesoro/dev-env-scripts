@@ -34,6 +34,7 @@ then
 	echo "Setting iptables to legacy mode (required by our Docker configuration)"
 	sudo update-alternatives --set iptables $(update-alternatives --list iptables | grep "legacy") > /dev/null 2>&1
 
+ 	# load release variables into current environment
 	. /etc/os-release
 
 	echo "Downloading docker..."
