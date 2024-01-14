@@ -46,10 +46,10 @@ then
 	echo "Adding you to docker group"
 	sudo usermod -aG docker $USER > /dev/null 2>&1
 	
-	## Get NodeJS v18
-	echo "Installing NodeJS v18..."
+	## Get NodeJS v20.11
+	echo "Installing NodeJS v20.11..."
 	sudo apt-get install curl > /dev/null 2>&1
-	curl -sL https://deb.nodesource.com/setup_18.x | sudo -E bash - > /dev/null 2>&1
+	curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash - > /dev/null 2>&1
 	sudo apt-get install nodejs > /dev/null 2>&1
 	
 	echo "Installing OpenSSH server..."
