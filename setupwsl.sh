@@ -49,9 +49,9 @@ then
 	
 	## Get NodeJS v20.11
 	echo "Installing NodeJS v20.11..."
-	sudo apt-get install curl > /dev/null 2>&1
+	sudo apt-get -y install curl > /dev/null 2>&1
 	curl -sL https://deb.nodesource.com/setup_20.x | sudo -E bash - > /dev/null 2>&1
-	sudo apt-get install nodejs > /dev/null 2>&1
+	sudo apt-get -y install nodejs > /dev/null 2>&1
 	
 	echo "Installing OpenSSH server..."
 	sudo apt-get -y install openssh-server > /dev/null 2>&1
